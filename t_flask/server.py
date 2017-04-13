@@ -3,6 +3,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+# set the secret key
+app.secret_key = "aLongStringOfRandomCharactersLike:_3n+k0(r37lb$mu..."
+
 # root page
 @app.route("/")
 def index():
