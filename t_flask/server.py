@@ -1,3 +1,13 @@
+# Name: t_flask
+# Author: Jacob Hunt
+# Author email: jacobhuntemail@gmail.com
+# Python version: 3.4.3
+#
+# Notes:
+# A simple implimentation of a flask-based Python server with some
+# minimalist CSS, JavaScript, and HTML form processing.  Will possibly
+# add an SQL database at some point in the future.
+
 import os
 from flask import Flask, render_template, request
 
