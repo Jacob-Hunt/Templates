@@ -1,0 +1,106 @@
+/*
+ *
+ * File name: style.css
+ * Author: Jacob Hunt
+ * Author email: jacobhuntemail@gmail.com
+ * License: MIT https://opensource.org/licenses/MIT
+ *          (full text at end of file)
+ *
+ * Notes:
+ *    CSS file for an animated loading screen.
+ *
+ */
+
+body {
+  background-color: #000;
+}
+
+h2 {
+  color: #fff;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  margin-left: -65px;
+  margin-top: 85px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -65px;
+  margin-top: -75px;
+}
+
+.load-bar-1 {
+    position: absolute;
+    top: 0;
+    border: 5px solid #000;
+    border-top: 5px solid #fff;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    animation: spin 4s linear infinite;
+}
+
+.load-bar-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -55px;
+    border: 5px solid #000;
+    border-top: 5px solid #fff;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    animation: spin 3s linear infinite;
+}
+
+.load-bar-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    border: 5px solid #000;
+    border-top: 5px solid #fff;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+
+
+/*
+ *
+ * Copyright 2017 Jacob Hunt
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy 
+ * of this software and associated documentation files (the "Software"), to deal 
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ *
+ */
